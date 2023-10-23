@@ -7,10 +7,8 @@ public class HomePage extends AbstractPage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
-
-    HomePage homePage = new HomePage(driver);
-
     public void openFaceBook() {
+        HomePage homePage = new HomePage(driver);
         homePage.open();
     }
 }
