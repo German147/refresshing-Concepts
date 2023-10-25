@@ -1,6 +1,7 @@
 package signIn;
 
 import barreragerman.carina.demo.homePage.HomePage;
+import barreragerman.carina.demo.homePage.registerAccount.RegisterAnAccountPage;
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import org.testng.annotations.Test;
 
@@ -15,6 +16,10 @@ public class RegisterOnFaceBookTest implements IAbstractTest {
           HomePage homePage = new HomePage(getDriver());
           homePage.openFaceBook();
           homePage.clickOnRegister();
+          RegisterAnAccountPage register = new RegisterAnAccountPage(getDriver());
+          register.setNameField();
+          register.setSurnamaneField();
+          register.setCellPhoneEmailField();
 
      }
 }
